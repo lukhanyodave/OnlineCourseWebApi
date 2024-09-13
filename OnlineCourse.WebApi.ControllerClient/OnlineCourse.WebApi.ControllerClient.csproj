@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.4.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Course.WebApi.Application\OnlineCourse.WebApi.Application.csproj" />
+    <ProjectReference Include="..\Course.WebApi.Domain\OnlineCourse.WebApi.Domain.csproj" />
+    <ProjectReference Include="..\Course.WebApi.Infrastructure\OnlineCourse.WebApi.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>
